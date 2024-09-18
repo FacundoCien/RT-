@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RT</title>
+    <style>
+        /* Importar fuentes de Google */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;700&display=swap');
+        
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Estilo de la barra de navegación */
+        nav {
+            background-color: rgba(31, 31, 31, 0.9);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: height 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #34c759;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 5px;
+        }
+
+        nav ul li a:hover {
+            color: #28a745;
+            transform: translateY(-3px);
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            margin: 100px auto 50px auto;
+            padding: 40px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        /* Título principal */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Efecto en "Tóxicas" */
+        h1 span {
+            color: #34c759;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Sección de títulos */
+        section h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #34c759;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #34c759;
+            padding-bottom: 10px;
+        }
+
+        /* Texto general */
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #cccccc;
+            margin-bottom: 20px;
+            background-color: #242424;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        section p:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Listas */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            padding: 15px;
+            background-color: #333333;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: #dddddd;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: translateY(-5px);
+            background-color: #444444;
+        }
+
+        /* Botón de llamada a la acción */
+        .cta-button {
+            background-color: #34c759;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #28a745;
+            transform: translateY(-5px);
+        }
+
+        /* Flecha de llamada a la acción */
+        .arrow {
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover .arrow {
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #b3b3b3;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Enlace interactivo */
+        a {
+            color: #34c759;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#como-identificarlo">Cómo Identificarlo</a></li>
+            <li><a href="#como-solucionarlo">Cómo Solucionarlo</a></li>
+            <li><a href="#ejemplos">Ejemplos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título principal -->
+        <h1>Relaciones <span>Tóxicas</span></h1>
+
+        <!-- Sección: ¿Qué es? -->
+        <section id="que-es">
+            <h2>¿Qué es una relación tóxica?</h2>
+            <p>Una relación tóxica es un vínculo en el que una o ambas partes se ven atrapadas en patrones negativos de comportamiento que resultan perjudiciales. Estos comportamientos pueden incluir control, manipulación, abuso emocional o incluso físico. Es esencial reconocer que no todas las relaciones difíciles son tóxicas; es el patrón de comportamiento lo que hace la diferencia.</p>
+            <p>En muchas ocasiones, una persona puede no ser consciente de lo que está ocurriendo, ya que puede enmascararse en dinámicas aparentemente normales. La clave es observar cómo te sientes en la relación. ¿Sientes que tu bienestar se ve afectado? Esta puede ser una señal de alerta.</p>
+        </section>
+
+        <!-- Sección: Cómo Identificarlo -->
+        <section id="como-identificarlo">
+            <h2>Cómo Identificar una Relación Tóxica</h2>
+            <p>Las relaciones tóxicas no siempre son fáciles de detectar, pero hay indicadores comunes que pueden ayudarte a reconocerlas:</p>
+            <ul>
+                <li>Tu bienestar emocional empeora en la relación.</li>
+                <li>Te sientes constantemente menospreciado, controlado o manipulado.</li>
+                <li>No puedes comunicarte abiertamente sin temor a represalias.</li>
+                <li>La relación gira alrededor de las necesidades de la otra persona, dejando poco espacio para tus propias necesidades.</li>
+            </ul>
+        </section>
+
+        <!-- Sección: Cómo Solucionarlo -->
+        <section id="como-solucionarlo">
+            <h2>Cómo Solucionar una Relación Tóxica</h2>
+            <p>Salir de una relación tóxica requiere valentía y, en algunos casos, intervención profesional. Aquí hay algunos pasos clave:</p>
+            <p>Primero, evalúa tus sentimientos y considera si esta relación realmente te beneficia. Habla con un amigo de confianza o un profesional sobre tu situación. También es crucial establecer límites claros con la otra persona, comunicando tus necesidades y expectativas. Si la relación no mejora, considera la posibilidad de alejarte de manera definitiva.</p>
+        </section>
+
+        <!-- Sección: Ejemplos -->
+        <section id="ejemplos">
+            <h2>Ejemplos de Relaciones Tóxicas</h2>
+            <p>A continuación, algunos ejemplos que ilustran lo que puede constituir una relación tóxica:</p>
+            <ul>
+                <li><strong>Ejemplo 1:</strong> Una pareja que constantemente critica a la otra persona, socavando su confianza. Aunque los desacuerdos son comunes, el abuso verbal sistemático es un signo de toxicidad.</li>
+                <li><strong>Ejemplo 2:</strong> Una amistad en la que una persona siempre exige apoyo emocional sin ofrecer nada a cambio, agotando al otro emocionalmente.</li>
+                <li><strong>Ejemplo 3:</strong> Una relación familiar donde uno de los miembros utiliza la culpa como herramienta para manipular a los demás.</li>
+            </ul>
+        </section>
+
+        <!-- Botón de llamada a la acción -->
+        <button class="cta-button" onclick="mostrarMensaje()">Saber más sobre cómo protegerte <span class="arrow">→</span></button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Relaciones Tóxicas. <br><a>Nahuel Barbero </a> | <a>Facundo Cientofante </a> | <a>Patricio Panasia </a></p>
+    </footer>
+
+    <script>
+        // Función para mostrar un mensaje y redirigir al usuario
+        function mostrarMensaje() {
+            alert('Infórmate más sobre las relaciones tóxicas y cómo protegerte.');
+            window.location.href = "https://www.ryapsicologos.net/relaciones-toxicas/";
+        }
+    </script>
+
+</body>
+</html>
